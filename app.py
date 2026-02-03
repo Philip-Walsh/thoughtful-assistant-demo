@@ -34,7 +34,7 @@ class ChatBot:
 
     def retrieve(self, query: str):
         query_emb = self.model.encode([query])[0]
-        sims = np.dot(self._q_embeddings, query_emb)
+        sims = np.dot(self.q_embeddings, query_emb)
         best_idx = np.argmax(sims)
         return sims[best_idx], self.answers[best_idx]
 

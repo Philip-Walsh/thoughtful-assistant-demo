@@ -15,26 +15,27 @@ short_description: A simple customer support AI agent for Thoughtful AI
 Thoughtful Assist demo was designed to for the [Thoughtful AI Technical Screening](https://thoughtfulautomation.notion.site/AI-Technical-Screen-d4d381a8c38d40fc9287cdb6c4f9992a) it's a minimal customer support agent that answers common questions about Thoughtful AI using semantic retrieval, with an LLM fallback for unmatched queries (Fallback uses DistilGPT2, a generic text generator, so when no Q&A match is found it may produce off-topic or nonsensical responses).
 
 View it on Hugging Face
-**(DEMO)[todo]**
+**[Hugging Face Demo](https://huggingface.co/spaces/Philip-Walsh/thoughtful-assistant-demo)** 👈
 
----
+## ![screenshot](demo.png)
 
 ## Steps to run locally
 
 ```sh
-# Clone the repository
+# Clone the repo
 git clone https://github.com/Philip-Walsh/thoughtful-assistant-demo
 cd thoughtful-assist
 
-# Create and activate the env
+# Create and activate a vitrual env
 python -m venv venv
 source venv/bin/activate
 
-# Install dependencies:
+# Install dependencies
 pip install -r requirements.txt
-
 
 # Run it
 python app.py
 
 ```
+
+then view it on [http://127.0.0.1:7860/](http://127.0.0.1:7860/)
